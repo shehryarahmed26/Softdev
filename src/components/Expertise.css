@@ -1,0 +1,5 @@
+.expertise-span {
+    background: linear-gradient(to right, #1665A8, #3DB9FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

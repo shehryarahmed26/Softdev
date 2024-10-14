@@ -1,0 +1,11 @@
+.counter-sec {
+    background: url('/Images/counters-bg.jpg');
+    width: 100%;
+    height: 350px;
+    background-position: center;
+}
+.counter {
+    background: linear-gradient(to right, rgb(0, 94, 255), rgb(74, 201, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
