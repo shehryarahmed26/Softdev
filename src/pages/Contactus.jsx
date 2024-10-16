@@ -4,7 +4,7 @@ import Banner from '../components/banner'
 const Contactus = () => {
   return (
     <div>
-      <Banner title='CONTACT US'/>
+      <Banner title={'CONTACT US'}/>
     </div>
   )
 }

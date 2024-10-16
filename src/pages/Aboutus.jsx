@@ -4,7 +4,7 @@ import Banner from '../components/banner'
 const Aboutus = () => {
   return (
     <div>
-      <Banner title='ABOUT US'/>
+      <Banner title={'ABOUT US'}/>
     </div>
   )
 }
