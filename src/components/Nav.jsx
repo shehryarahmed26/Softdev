@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Button, link} from "@nextui-org/react";
 // import {AcmeLogo} from "./AcmeLogo.jsx";
+import { Link } from 'react-router-dom'
 
 export default function Nav() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -13,17 +14,18 @@ export default function Nav() {
             setshadow(false)
         }
     })
+
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+    "Home",
+    "Aboutus",
+    "Services",
+    "Portfolio",
+    "Contactus",
+    // "Deployments",
+    // "My Settings",
+    // "Team Settings",
+    // "Help & Feedback",
+    // "Log Out",
   ];
 
   return (
@@ -35,34 +37,34 @@ export default function Nav() {
         />
         <NavbarBrand>
           {/* <AcmeLogo /> */}
-          <img className="w-36" src="/Images/logo.jfif" alt="" />
+          <img className="w-24 md:w-36" src="/Images/logo.jfif" alt="" />
           {/* <p className="font-bold text-inherit">ACME</p> */}
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-10" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link to={'/'} className="hover:text-blue-500 transition-all" color="foreground" href="#">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" color="foreground" aria-current="page">
+          <Link to={'/aboutus'} href="#" className="hover:text-blue-500 transition-all" color="foreground" aria-current="page">
             About us
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link to={'/services'} className="hover:text-blue-500 transition-all" color="foreground" href="#">
             Services
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link to={'/portfolio'} className="hover:text-blue-500 transition-all" color="foreground" href="#">
             Portfolio
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link to={'/contactus'} className="hover:text-blue-500 transition-all" color="foreground" href="#">
             Contact us
           </Link>
         </NavbarItem>
@@ -70,7 +72,7 @@ export default function Nav() {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
+            <Link to={`${item}`}
               color={
                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
               }

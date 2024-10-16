@@ -6,6 +6,8 @@ import Services from './pages/Services'
 import Aboutus from './pages/Aboutus'
 import Contactus from './pages/Contactus'
 import Nav from './components/Nav'
+import Footer from './components/Footer'
+import Portfolio from './pages/Portfolio'
 
 const App = () => {
   return (
@@ -16,7 +18,9 @@ const App = () => {
       <Route path='/services' element={<Services/>}></Route>
       <Route path='/aboutus' element={<Aboutus/>}></Route>
       <Route path='/contactus' element={<Contactus/>}></Route>
+      <Route path='/portfolio' element={<Portfolio/>}></Route>
     </Routes>
+    <Footer/>
     </BrowserRouter>
   
   )

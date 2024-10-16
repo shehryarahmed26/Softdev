@@ -5,8 +5,9 @@ const Footer = () => {
     <div className='px-4 md:px-10 bg-gray-100 pt-5'>
       <div className='flex flex-wrap gap-10 md:gap-0 w-full justify-between '>
     <div className="logo flex flex-col md:w-[40%]">
-        <h2 className='text-1xl md:text-3xl font-semibold text-blue-700 mb-5'>Logo</h2>
-        <p className='text-xs text-gray-500 md:text-sm'>Aciano Technologies specializes in AI development and IT staff augmentation, offering top talent and customized services in resource outsourcing, cloud automation, IoT solutions, and Microsoft D365 consultancy.</p>
+        {/* <h2 className='text-1xl md:text-3xl font-semibold text-blue-700 mb-5'>Logo</h2> */}
+        <img className='w-28 md:36 my-3' src="/Images/logo.jfif" alt="" />
+        <p className='text-xs text-gray-500 md:text-sm md:w-[70%]'>Aciano Technologies specializes in AI development and IT staff augmentation, offering top talent and customized services in resource outsourcing, cloud automation, IoT solutions, and Microsoft D365 consultancy.</p>
     </div>
     <div className="services w-[40%] md:w-[30%]">
         <h3 className='text-1xl md:text-3xl font-semibold text-blue-700 mb-5'>Services</h3>
