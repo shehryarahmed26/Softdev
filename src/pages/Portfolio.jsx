@@ -1,5 +1,5 @@
 import React from 'react'
-import Banner from '../components/banner'
+import Banner from '../components/Banner'
 
 const Portfolio = () => {
   return (
