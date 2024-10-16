@@ -8,7 +8,7 @@ const Footer = () => {
         <h2 className='text-1xl md:text-3xl font-semibold text-blue-700 mb-5'>Logo</h2>
         <p className='text-xs text-gray-500 md:text-sm'>Aciano Technologies specializes in AI development and IT staff augmentation, offering top talent and customized services in resource outsourcing, cloud automation, IoT solutions, and Microsoft D365 consultancy.</p>
     </div>
-    <div className="services  md:w-[30%]">
+    <div className="services w-[40%] md:w-[30%]">
         <h3 className='text-1xl md:text-3xl font-semibold text-blue-700 mb-5'>Services</h3>
     <p className='text-gray-500 text-xs md:text-sm my-1'>Web Development</p>
     <p className='text-gray-500 text-xs md:text-sm my-1'>Ecommerce Solutions</p>
@@ -17,7 +17,7 @@ const Footer = () => {
     <p className='text-gray-500 text-xs md:text-sm my-1'>Graphic Designing</p>
     <p className='text-gray-500 text-xs md:text-sm my-1'>Digital Marketing</p>
     </div>
-    <div className="reach-us flex flex-col w-[30%] md:w-[30%]">
+    <div className="reach-us flex flex-col w-[40%] md:w-[30%]">
         <h3 className='text-1xl md:text-3xl font-semibold text-blue-700 mb-5'>Reach  us</h3>
     <p className='text-gray-500 text-xs md:text-sm my-1'>Suite No 801, Emarah Suites, Shahrah-e-Faisal, Opposite FTC, SMCHS Karachi</p>
     <p className='text-gray-500 text-xs md:text-sm my-1'>support@aciano.net</p>

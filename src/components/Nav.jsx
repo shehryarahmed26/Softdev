@@ -35,7 +35,8 @@ export default function Nav() {
         />
         <NavbarBrand>
           {/* <AcmeLogo /> */}
-          <p className="font-bold text-inherit">ACME</p>
+          <img className="w-36" src="/Images/logo.jfif" alt="" />
+          {/* <p className="font-bold text-inherit">ACME</p> */}
         </NavbarBrand>
       </NavbarContent>
 
