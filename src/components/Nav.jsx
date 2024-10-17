@@ -14,6 +14,10 @@ export default function Nav() {
             setshadow(false)
         }
     })
+    const handlemenu = () => {
+     console.log('yes');
+     
+    }
 
   const menuItems = [
     "Home",
@@ -80,7 +84,7 @@ export default function Nav() {
               href="#"
               size="lg"
             >
-              {item}
+              <p onClick={handlemenu}>{item}</p>
             </Link>
           </NavbarMenuItem>
         ))}
