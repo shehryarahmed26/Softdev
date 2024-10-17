@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
 const Header = () => {
   const [navcolor, setnavcolor] = useState(false)
   window.addEventListener('scroll', () => {
@@ -26,7 +27,7 @@ const Header = () => {
       <h1 className='text-3xl md:text-7xl max-w-[400px] font-bold text-white pt-24'>Empowering <span className='header-span'>Innovation</span> with latest technologies</h1>
       <p className='text-white my-4'>Scale up your development teams with reliable, friendly, and proactive experts.
 </p>
-      <button className='text-white bg-black px-6 py-1 rounded-full my-3 border-blue-700 border-2 hover:bg-blue-500 hover:border-none'>Lets Discuss</button>
+<Link to={'/contactus'}><button className='text-white bg-black px-6 py-1 rounded-full my-3 border-blue-700 border-2 hover:bg-blue-500 hover:border-none'>Lets Discuss</button></Link>
     </div>
 
     </div>
