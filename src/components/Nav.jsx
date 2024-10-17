@@ -37,7 +37,7 @@ export default function Nav() {
         />
         <NavbarBrand>
           {/* <AcmeLogo /> */}
-          <img className="w-24 md:w-36" src="/Images/logo.jfif" alt="" />
+          <Link to={'/'}><img className="w-24 md:w-36" src="/Images/logo.jfif" alt="" /></Link>
           {/* <p className="font-bold text-inherit">ACME</p> */}
         </NavbarBrand>
       </NavbarContent>
@@ -58,11 +58,11 @@ export default function Nav() {
             Services
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        {/* <NavbarItem>
           <Link to={'/portfolio'} className="hover:text-blue-500 transition-all" color="foreground" href="#">
             Portfolio
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
         <NavbarItem>
           <Link to={'/contactus'} className="hover:text-blue-500 transition-all" color="foreground" href="#">
             Contact us
